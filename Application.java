@@ -89,16 +89,42 @@ public class ConsoleApplet extends java.applet.Applet
       add("South",temp);
       
    }
+
+#FEATURE302 changes by pritham on Registration Module
+ public void display1() {
+    System.out.println("Method without parameter");
+  }
+
+  // method with single parameter
+  public void display2(int a) {
+    System.out.println("Method with a single parameter: " + a);
+
    #feature301 changes by Srinija on reports module in BankingDomain Project
     // create a method
   public int addNumbers(int a, int b) {
     int sum = a + b;
     // return value
     return sum;
+
   }
 
   public static void main(String[] args) {
     
+
+    // create an object of Main
+    Main obj = new Main();
+
+    // calling method with no parameter
+    obj.display1();
+    
+    // calling method with the single parameter
+    obj.display2(24);
+  }
+}
+
+
+
+
     int num1 = 25;
     int num2 = 15;
 
@@ -110,6 +136,7 @@ public class ConsoleApplet extends java.applet.Applet
   }
   
   
+
 
    public Insets getInsets() {
       return new Insets(2,2,2,2);

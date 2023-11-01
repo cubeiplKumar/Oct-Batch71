@@ -89,6 +89,27 @@ public class ConsoleApplet extends java.applet.Applet
       add("South",temp);
       
    }
+   #feature301 changes by Srinija on reports module in BankingDomain Project
+    // create a method
+  public int addNumbers(int a, int b) {
+    int sum = a + b;
+    // return value
+    return sum;
+  }
+
+  public static void main(String[] args) {
+    
+    int num1 = 25;
+    int num2 = 15;
+
+    // create an object of Main
+    Main obj = new Main();
+    // calling method
+    int result = obj.addNumbers(num1, num2);
+    System.out.println("Sum is: " + result);
+  }
+  
+  
 
    public Insets getInsets() {
       return new Insets(2,2,2,2);
